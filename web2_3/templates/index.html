@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Константин Божко | О себе</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <header>
+        <h1>Константин Божко</h1>
+        <p> Студент | Стажер ML</p>
+    </header>
+
+    <section class="content-block left">
+        <img src="{{ url_for('static', filename='images/my.jpg') }}" alt="Константин" class="photo">
+        <div class="text">
+            <h2>О себе</h2>
+            <p>Студент 3-го курса с большим интересом к Data Science и машинному обучению. В данный момент работаю в Сбере. Интереусюсь инди музыкой, пишем её на досуге. Хожу в зал 💪</p>
+            <h3>Моя музыка</h3>
+            <audio controls>
+                <source src="{{ url_for('static', filename='audio/roof runner(less verb).mp3') }}" type="audio/mpeg">
+            </audio>
+        </div>
+    </section>
+
+    <section class="content-block left">
+        <div class="text">
+            <h2>Проекты и опыт</h2>
+            <ul>
+                <li>Стажер в отделе кредитых рисков, в команде IT-Валидации</li>
+                <li>Генерация обложек альбомов по жанровому запросу</li>
+                <li>Анализ временных рядов</li>
+            </ul>
+        </div>
+        <img src="{{ url_for('static', filename='images/sber.png') }}" alt="Проект" class="photo">
+    </section>
+
+    <section class="content-block left">
+        <img src="{{ url_for('static', filename='images/nstu.jpg') }}" alt="Образование" class="photo">
+        <div class="text">
+            <h2>Образование</h2>
+            <p>Новосибирский Государственный Технический Университет (НГТУ “НЭТИ”), Факультет прикладной математики и информатики, 2022–2026.</p>
+        </div>
+    </section>
+
+    <section class="comments-section">
+        <h2>Комментарии</h2>
+        <div id="comment-form">
+            <textarea id="commentText" placeholder="Введите ваш комментарий"></textarea>
+            <textarea id="commentNickName" placeholder="Введите ваш ник"></textarea>
+            <button onclick="addComment()">Добавить комментарий</button>
+        </div>
+        <div id="comments-container">
+        </div>
+    </section>
+
+    <section class="social-links">
+        <h2>Найти меня в соцсетях</h2>
+        <a href="https://vk.com/bkd42nd">VK</a>
+        <a href="https://t.me/bkd42nd">Telegram</a>
+        <a href="{{ url_for('work_report') }}">Отчет по работе</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Константин Божко</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    text-align: center;
+    background-image: url(images/back.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 255vh;
+    padding-bottom: 50px; 
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    margin: 40px 0;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+
+.content-block.left {
+    flex-direction: row;
+}
+
+.photo {
+    width: 300px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.text {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 0 20px;
+    color: #fff;
+    border-radius: 10px;
+    flex: 1;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #e98a3c;
+}
+
+.comments-section {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+#comment-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#commentText {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    height: 100px;
+}
+
+#commentNickName {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    resize: none;
+    height: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #e98a3c;
+}
+
+#comments-container {
+    margin-top: 20px;
+}
+
+.comment {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

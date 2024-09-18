@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отчет по лабораторной работе</title>
+</head>
+<body>
+    <p style="font-size:22px; text-align: center;">
+        <font face="Calibri">Министерство науки и высшего образования Российской Федерации</font>
+    </p>
+
+    <p style="font-size:18px; text-align: center;">
+        <font face="Calibri">Федеральное государственное бюджетное образовательное учреждение высшего образования
+            <br>«Новосибирский государственный технический университет»
+            <br><img src="{{ url_for('static', filename='images/nstu.png') }}" width="250px">
+        </font>
+    </p>
+
+    <p style="font-size:18px; text-align: center;">
+        <font face="Calibri">Лабораторная работа №2 и №3
+            <br>по дисциплине "Основы web-программирования"
+        </font>
+    </p>
+
+    <p style="font-size:17px; text-align: center;">
+        <font face="Calibri"><strong>Кафедра теоретической и прикладной информатики</strong></font>
+    </p>
+
+    <div style="float: left;">
+        <img src="{{ url_for('static', filename='images/fpmi.jpg') }}" width="270px">
+    </div>
+
+    <div style="float: left;">
+        <br><br>
+        Факультет: ПМИ
+        <br><br><br>
+        Группа: ПМИ-22
+        <br><br><br>
+        Студент: Божко Константин Дмитриевич
+        <br><br><br>
+        Преподаватель: Цыгулин Алексей Александрович
+    </div>
+
+    <style>
+        .end {
+            position: absolute;
+            top: 680px;
+            left: 47%;
+            text-align: center;
+        }
+        .text_ {
+            position: absolute;
+            top: 800px;
+            left: 10%;
+            right: 10%;
+            text-align: left;
+            font-size: 20px;
+        }
+    </style>
+
+    <p class="end">
+        Новосибирск<br>
+        2024
+    </p>
+
+    <p class="text_">
+        В данной лабораторной работе я: <br><br>
+        1. Сформировал свою html-страничку с обязательными атрибутами по заданию (текст, ссылки, фотографии)
+        <br>
+        <a href="{{ url_for('index') }}">Ссылка на основную страничку</a>
+        <br><br>
+        2. Написал JavaScript-скрипт, который позволяет добавлять комментарии на сайте в реальном времени и загружать их с сервера. Пользователи могут оставлять свои комментарии, которые автоматически обновляются.
+        <br><br>
+        3. Разработал Telegram-бота для удобного управления комментариями на сайте. Через бота можно добавлять, удалять, и просматривать комментарии, что облегчает администрирование.
+        <br>
+        <a href="https://t.me/bkd42nd_comment_bot">Ссылка на Telegram-бота</a>
+        <br><br>
+        4. Сформировал страницу с отчетом с сохранением всех его атрибутов.
+        <br><br>
+    </p>
+</body>
+</html>
